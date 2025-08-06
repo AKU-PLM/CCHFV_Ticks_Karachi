@@ -48,8 +48,8 @@ S_01 <- ggtree(S_MCCtree, mrsd = "2023-01-01", color='#A6A6A6',size=0.5) %<+% me
                      labels = seq(1468, 2023, by = 50))+
   coord_cartesian(xlim = c(1468, 2040))+
   geom_tippoint(aes(fill = Country, color=isolates, stroke=1.5), size=3, shape=21) + # fill tip point based on country and stroke to differentiate study and global isolate
-  scale_fill_manual(values = c('red','yellow','purple','skyblue','orange','lightpink','blue','green','pink')) + # set fill color
-  scale_color_manual(values = c('grey','black')) #set stroke color
+  scale_fill_manual(values = c('#ff0000ff', '#f9f500','#A200F6','#aee3f5','#fa5d05ff','#f702e7','#8486f8ff','#2cb431','#fcc2d8')) + # set fill color
+  scale_color_manual(values = c('#676767','black')) #set stroke color
 
 S_01 #visualize annotated tree
 
@@ -61,8 +61,8 @@ M_01 <- ggtree(M_MCCtree, mrsd = "2023-01-01", color='#A6A6A6',size=0.5) %<+% me
                      labels = seq(1758, 2023, by = 26))+
   coord_cartesian(xlim = c(1758, 2032))+
   geom_tippoint(aes(fill = Country, color=isolates, stroke=1.5), size=3, shape=21) +
-  scale_fill_manual(values = c('red','purple','skyblue','green','pink')) +
-  scale_color_manual(values = c('grey','black'))
+  scale_fill_manual(values = c('#ff0000ff','#A200F6','#aee3f5','#2cb431','#fcc2d8')) +
+  scale_color_manual(values = c('#676767','black'))
 M_01
 
 L_01 <- ggtree(L_MCCtree, mrsd = "2023-01-01", color='#A6A6A6',size=0.5) %<+% metadata_L_01 +
@@ -72,8 +72,8 @@ L_01 <- ggtree(L_MCCtree, mrsd = "2023-01-01", color='#A6A6A6',size=0.5) %<+% me
                      labels = seq(1170, 2023, by = 85))+
   coord_cartesian(xlim = c(1170, 2045))+
   geom_tippoint(aes(fill = Country, color=isolates, stroke=1.5), size=3, shape=21) +
-  scale_fill_manual(values = c('red','yellow','purple','skyblue','blue','green','pink')) +
-  scale_color_manual(values = c('grey','black'))
+  scale_fill_manual(values = c('#ff0000ff','#f9f500','#A200F6','#aee3f5','#8285f8ff','#2cb431','#fcc2d8')) +
+  scale_color_manual(values = c('#676767','black'))
 L_01
 
 
