@@ -2,7 +2,6 @@
 library(ggnewscale)
 library(ggplot2)
 library(ggtree)
-library(readxl)
 library(dplyr)
 library(ape)
 library(treeio)
@@ -47,7 +46,7 @@ S_01 <- ggtree(S_MCCtree, mrsd = "2023-01-01", color='#A6A6A6',size=0.5) %<+% me
                      breaks = seq(1468, 2023, by = 50),
                      labels = seq(1468, 2023, by = 50))+
   coord_cartesian(xlim = c(1468, 2040))+
-  geom_tippoint(aes(fill = Country, color=isolates, stroke=1.5), size=3, shape=21) + # fill tip point based on country and stroke to differentiate study and global isolate
+  geom_tippoint(aes(fill = Country, color=isolates, stroke=1.5), size=3, shape=21) + # fill tip point based on country and color (stroke color) to differentiate study and global isolate
   scale_fill_manual(values = c('#ff0000ff', '#f9f500','#A200F6','#aee3f5','#fa5d05ff','#f702e7','#8486f8ff','#2cb431','#fcc2d8')) + # set fill color
   scale_color_manual(values = c('#676767','black')) #set stroke color
 
